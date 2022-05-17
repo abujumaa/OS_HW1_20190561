@@ -1,8 +1,3 @@
-'''
-VALID INPUTS: 
-1- python3 main.py TEST.txt PR 
-2- python3 main.py TEST.txt RR 20
-'''
 import sys
 ins = sys.argv
 quant = 0
@@ -84,6 +79,8 @@ def RR(quantum):
     else:
       i = 0
     tl.append(totalbt)
+    if (i+1) not in ids:
+      rt += tl[i] 
     ids.append(i + 1)
   tl = list(set(tl))
   tl.sort()
